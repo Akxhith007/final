@@ -1,0 +1,32 @@
+*{
+    --fontsize : 1.2em
+}
+.navbox{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.navheading{
+    font-size: var(--fontsize);
+}
+
+.navheading:hover{
+    text-decoration: none;
+    transform: scale(103%);
+}
+
+.nav-item{
+    list-style-type: none;
+    font-size: calc(var(--fontsize)*.9);
+}
+
+@media screen and (max-width: 700px) {
+    *{
+        --fontsize: .8em;
+    }
+}
